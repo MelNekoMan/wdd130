@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+
 nav {
     background-color: lightgrey;
     padding: 10px;
@@ -24,38 +35,19 @@ main h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.profile-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  background-color: #eee;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-box img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.profile-box p {
-  flex: 1;
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-}
-
-
 main img {
     width: 200px;
     height: auto;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    padding: 2px;
     box-shadow: 0 0 30px #333;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+p {
+  margin: 1rem;
+  padding: 0;
 }
 
 
@@ -70,12 +62,16 @@ aside {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 aside h2 {
+  position: absolute;
+  top: 35px;
+  left: 65px;
   margin-bottom: 1rem;
   font-size: 1.4rem;
-  color: #222;
+  color: #000000;
 }
 
 aside img {
@@ -91,10 +87,22 @@ aside p {
   text-align: justify;
 }
 
-p { padding: 0;}
-
 footer {
     margin-top: 1rem;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+  clear: right;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  padding: 1.5rem;
+  background-color: #eee;
+  color: #000;
+}
+
+.indent {
+  padding-left: 1rem;
 }
