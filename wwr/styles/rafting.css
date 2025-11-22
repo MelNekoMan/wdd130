@@ -2,8 +2,7 @@
 --primary-color: gray;
 --secondary-color: lightgrey;
 --accent1-color: #264653;
---heading-font: "Times New Roman", "Georgia", serif;
---body-font: 'Quicksand', Arial, sans-serif;
+--body-font: 'Arial', Helvetica, sans-serif;
 }
 
 header {
