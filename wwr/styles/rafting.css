@@ -7,7 +7,7 @@
 
 header {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: #ffffff;
   padding: 1rem;
   text-align: center;
 }
@@ -56,6 +56,36 @@ nav, p, section, article {
   display: block;
 }
 
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: auto;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 16px;
+  opacity: 0.9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  color: #333;
+}
+
 h1 {
 position: relative;
 top: 0px;
@@ -91,7 +121,8 @@ nav ul {
 
 
 nav ul li a {
-  color: white;
+  color: #ffffff;
+  background-color: #003344;
   padding: 1rem;
   text-decoration: none;
 }
