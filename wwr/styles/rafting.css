@@ -117,12 +117,13 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
+  background-color: var(--secondary-color);
+  
 }
-
 
 nav ul li a {
   color: #ffffff;
-  background-color: #003344;
+  background-color: var(--secondary-color);
   padding: 1rem;
   text-decoration: none;
 }
