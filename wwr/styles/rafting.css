@@ -89,8 +89,9 @@ nav, p, section, article {
 .hero .overlay > p {
   font-size: 1.1rem;
   font-weight: 400;
-  color: rgba(255,255,255,0.85);
+  color: #1f8cccd9;
   text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.6);
   margin-top: 0.5rem;
 }
 
