@@ -87,10 +87,10 @@ nav, p, section, article {
 }
 
 .hero .overlay > p {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--secondary-color);
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
   margin-top: 0.5rem;
 }
 
