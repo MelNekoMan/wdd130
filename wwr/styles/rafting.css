@@ -1,6 +1,6 @@
 :root {
---primary-color: gray;
---secondary-color: lightgrey;
+--primary-color: darkslategrey;
+--secondary-color: gainsboro;
 --accent1-color: #264653;
 --body-font: 'Arial', Helvetica, sans-serif;
 }
@@ -47,7 +47,7 @@ nav, p, section, article {
 .hero {
   position: relative;
   text-align: center;
-  color: white;
+  color: var(--accent1-color);
 }
 
 .hero-img {
@@ -86,6 +86,14 @@ nav, p, section, article {
   color: #333;
 }
 
+.hero .overlay > p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  margin-top: 0.5rem;
+}
+
 h1 {
 position: relative;
 top: 0px;
@@ -122,7 +130,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: var(--accent1-color);
   background-color: var(--secondary-color);
   padding: 1rem;
   text-decoration: none;
