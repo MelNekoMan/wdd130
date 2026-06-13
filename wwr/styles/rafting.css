@@ -1,9 +1,11 @@
 :root {
---primary-color: darkslategrey;
---secondary-color: gainsboro;
---accent1-color: #264653;
---accent-color: #ff6f61;
---body-font: 'Arial', Helvetica, sans-serif;
+  --primary-color: #2f4f4f;
+  --secondary-color: #dcdcdc;
+  --accent1-color: #264653;
+  --text-dark: #000000;
+  --text-light: #ffffff;
+  
+  --body-font: 'Arial', Helvetica, sans-serif;
 }
 
 * {
@@ -351,9 +353,7 @@ footer p {
     color: var(--primary-color, #004c6d);
 }
 
-.form-box input[type="text"],
-.form-box input[type="email"],
-.form-box textarea {
+.form-box input[type="text"], .form-box input[type="email"], .form-box textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
