@@ -382,7 +382,7 @@ footer p {
 }
 
 .form-box button[type="submit"] {
-  background-color: var(--accent-color, #ff6f61);
+  background-color: #c84b31;
   color: white;
   font-size: 1.1rem;
   font-weight: bold;
