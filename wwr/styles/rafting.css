@@ -281,7 +281,6 @@ footer p {
 
 .company-info h1 {
   color: #000;
-  background-color: none;
 }
 
 .company-info p {
@@ -437,9 +436,9 @@ footer p {
   margin-bottom: 15px;
 }
 
-.team-member h3 {
+.team-member h3, .team-member p {
   margin: 10px 0 5px 0;
-  color: var(--primary-color);
+  color: #000;
 }
 
 .team-member .role, p.role {
