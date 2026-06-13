@@ -334,8 +334,8 @@ footer p {
 }
 
 .form-box form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    grid-template-columns: 1fr;
     flex-direction: column;
     gap: 20px;
 }
