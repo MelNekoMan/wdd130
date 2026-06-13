@@ -329,11 +329,12 @@ footer p {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  color: #000;
 }
 
 .form-box label, .form-box legend {
   font-weight: bold;
-  color: var(--primary-color, #004c6d);
+  color: #000;
 }
 
 .form-box input[type="text"], .form-box input[type="email"], .form-box textarea {
@@ -359,6 +360,7 @@ footer p {
 
 .form-box legend {
   padding: 0 10px 0 1px;
+  color: #000
 }
 
 .radio-option, .checkbox-option {
