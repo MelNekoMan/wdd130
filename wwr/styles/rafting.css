@@ -376,10 +376,10 @@ footer p {
     width: 100%;
 }
 
-.form-box legend {
+.form-box legend, .form-box label {
     font-weight: bold;
     padding: 0 10px;
-    color: var(--primary-color);
+    color: var(--primary-color, #004c6d);
 }
 
 .radio-option, .checkbox-option {
