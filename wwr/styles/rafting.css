@@ -4,7 +4,6 @@
   --accent1-color: #264653;
   --text-dark: #000000;
   --text-light: #ffffff;
-  
   --body-font: 'Arial', Helvetica, sans-serif;
 }
 
@@ -76,14 +75,14 @@ body {
 }
 
 h1 {
-position: relative;
-top: 0px;
-width: 100%;
-padding: 16px;
-text-align: center;
-opacity: 0.7;
-background-color: var(--accent1-color);
-color: #fff;
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
 }
 
 h2 {
@@ -180,7 +179,6 @@ h2 {
   line-height: 1.5;
 }
 
-
 /* Section */
 .history-grid {
   display: grid;
@@ -194,11 +192,14 @@ h2 {
   line-height: 1.6;
 }
 
+.history-img, .adventure-grid img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 .history-img {
   max-width: 250px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 section {
@@ -215,8 +216,11 @@ section h2 {
   margin-bottom: 0.5rem;
 }
 
-section p {
+section p, .adventure-grid figcaption {
   color: #333;
+}
+
+section p {
   line-height: 1.6;
 }
 
@@ -237,15 +241,12 @@ section p {
 .adventure-grid img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   display: block;
 }
 
 .adventure-grid figcaption {
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #333;
 }
 
 footer {
@@ -283,145 +284,141 @@ footer p {
 }
 
 /* Contact Us section */
-
 .company-info {
-    text-align: center;
-    margin: 40px auto;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    background: none;
-    border: none;
-    box-shadow: none;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 .company-info h1 {
-  color: #ffffff
+  color: #ffffff;
 }
 
 .company-info p {
-    margin: 0; 
-    line-height: 1.4;
+  margin: 0; 
+  line-height: 1.4;
 }
 
 .form-map-container {
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
+  display: flex;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.map-box, .form-box {
+  flex: 1;
 }
 
 .map-box {
-    flex: 1;
-    min-width: 300px;
+  min-width: 300px;
 }
 
 .map-box iframe {
-    width: 100%;
-    height: 450px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-box {
-    flex: 1;
-    background-color: var(--secondary-color, #f4f4f4);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-color, #f4f4f4);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-box form {
-    display: flex;
-    grid-template-columns: 1fr;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .form-item {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.form-box label {
-    font-weight: bold;
-    color: var(--primary-color, #004c6d);
+.form-box label, .form-box legend {
+  font-weight: bold;
+  color: var(--primary-color, #004c6d);
 }
 
 .form-box input[type="text"], .form-box input[type="email"], .form-box textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 1rem;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 .form-box textarea {
-    resize: vertical;
-    height: 120px;
+  resize: vertical;
+  height: 120px;
 }
 
 .form-box fieldset {
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    margin: 0;
-    box-sizing: border-box;
-    width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.form-box legend, .form-box label {
-    font-weight: bold;
-    padding: 0 10px;
-    color: var(--primary-color, #004c6d);
+.form-box legend {
+  padding: 0 10px;
 }
 
 .radio-option, .checkbox-option {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-top: 8px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
 .radio-option input, .checkbox-option input {
-    margin: 0;
-    width: 18px;
-    height: 18px;
+  margin: 0;
+  width: 18px;
+  height: 18px;
 }
 
-
 .radio-option label, .checkbox-option label {
-    font-weight: normal;
-    cursor: pointer;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 .form-box button[type="submit"] {
-    background-color: var(--accent-color, #ff6f61);
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    padding: 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease;
-    grid-column: span 2;
+  background-color: var(--accent-color, #ff6f61);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  grid-column: span 2;
 }
 
 .form-box button[type="submit"]:hover {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .form-box button[type="submit"]:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .team-section {
@@ -432,50 +429,50 @@ footer p {
 }
 
 .team-section h2 {
-    font-size: 2.2rem;
-    color: var(--primary-color);
-    margin-bottom: 40px;
-    position: relative;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .team-member {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
 .team-member img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }
 
 .team-member h3 {
-    margin: 10px 0 5px 0;
-    color: var(--primary-color);
+  margin: 10px 0 5px 0;
+  color: var(--primary-color);
 }
 
 .team-member .role {
-    font-weight: bold;
-    color: var(--accent-color);
-    margin-bottom: 12px;
-    font-size: 0.95rem;
-    text-transform: uppercase;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
 }
 
 .team-member .bio {
-    font-size: 0.9rem;
-    color: #555;
-    line-height: 1.5;
-    text-align: justify;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
 }
