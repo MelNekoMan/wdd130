@@ -121,9 +121,10 @@ h2, .team-section h2 {
 
 .hero h1 {
   position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
   margin: 0 auto;
   background-color: var(--text-dark);;
   color: var(--text-light);;
@@ -586,7 +587,7 @@ footer p {
 
 .form-group label {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--text-dark);
     font-size: 0.95rem;
 }
 
