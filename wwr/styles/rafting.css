@@ -635,8 +635,18 @@ footer p {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
 .trips-table th {
     background-color: var(--primary-color);
     color: var(--text-light);
     font-weight: bold;
+}
+
+.table-summary-section .trips-table tbody tr:hover td {
+    color: var(--text-light);
+    background-color: var(--primary-color);
+}
+
+.table-summary-section .trips-table tbody tr td {
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
