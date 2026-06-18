@@ -540,7 +540,7 @@ footer p {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.cta-button:hover, .newsletter-form .submit-button:hover, .form-box button[type="submit"]:hover {
+.cta-button:hover, .newsletter-form .submit-button:hover, .form-box button[type="submit"]:hover, .trips-table tbody tr:hover {
     background-color: var(--primary-color);
 }
 
@@ -615,4 +615,28 @@ footer p {
 
 .cta-button:active,.newsletter-form .submit-button:active, .form-box button[type="submit"]:active {
   transform: scale(0.98);
+}
+
+/* Table Summary Styling */
+.table-summary-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 20px;
+}
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.trips-table th, .trips-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.trips-table th {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-weight: bold;
 }
